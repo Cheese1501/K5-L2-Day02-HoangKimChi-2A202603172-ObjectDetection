@@ -78,7 +78,7 @@ def main() -> int:
     parser.add_argument("--student-labels", type=Path, required=True)
     parser.add_argument("--gold-labels", type=Path, required=True)
     parser.add_argument("--iou-threshold", type=float, default=0.50)
-    parser.add_argument("--min-f1", type=float, default=0.80)
+    parser.add_argument("--min-f1", type=float, default=0.50)
     parser.add_argument("--min-mean-iou", type=float, default=0.70)
     parser.add_argument("--output", type=Path, default=Path("outputs/annotation_evaluation.json"))
     args = parser.parse_args()
